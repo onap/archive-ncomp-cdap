@@ -1,0 +1,171 @@
+
+/*-
+ * ============LICENSE_START==========================================
+ * OPENECOMP - DCAE
+ * ===================================================================
+ * Copyright (c) 2017 AT&T Intellectual Property. All rights reserved.
+ * ===================================================================
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0 
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ============LICENSE_END============================================
+ */
+	
+@GenModel(modelDirectory="/ncomp-cdap-model/src/main/xcore-gen")
+
+
+package org.openecomp.ncomp.cdap
+
+
+import org.openecomp.ncomp.core.NamedEntity
+
+class CdapAdaptor {  
+}
+
+class CdapCluster extends NamedEntity, CdapApi {
+	String baseUrl
+	long pollingFrequency = "300000"
+	boolean remote = "false"
+	contains unordered CdapConfiguration[] configurations
+	contains unordered CdapNamespace[] namespaces opposite cluster
+	op void poll()	 
+}
+
+class CdapApi {  
+	
+	op String createNamespace(String namespace)
+	
+	op String deleteNamespace(String namespace)
+	
+	op String deployApp(String namespace, String jarfile)
+
+	op String loadArtifact(String namespace, String artifactName, String jarfile, String version) 
+
+	op String deleteArtifact(String namespace, String artifactName, String artifactVersion)
+
+	op String startFlow(String namespace, String appName, String flowId, String extraArgs) 
+	
+	op String startWorker(String namespace, String appName, String workerId, String extraArgs) 
+
+	op String startService(String namespace, String appName, String serviceId, String extraArgs) 
+
+	op String startApp(String namespace, String appName) 
+	
+	op String stopApp(String namespace, String appName) 
+
+	op String deleteApp(String namespace, String appName) 
+
+	op String loadPreferencesApp(String namespace, String prefsFile, String appId) 
+
+	op String loadPreferencesFlow(String namespace, String prefsFile, String appId, String flowId) 
+
+	op String loadPreferencesNameSpace(String namespace, String prefsFile) 
+
+	op String setPreferencesApp(String namespace, String prefsString, String appId) 
+
+	op String setPreferencesFlow(String namespace, String prefsString, String appId, String flowId) 
+
+	op String setPreferencesWorker(String namespace, String prefsString, String appId, String workerId) 
+
+	op String setPreferencesService(String namespace, String prefsString, String appId, String serviceId) 
+	
+	op String setPreferencesNameSpace(String namespace, String prefsString) 
+
+	op String setFlowRunTimeArgs(String namespace, String appId, String flowId, String args) 
+
+	op String setFlowletInstances(String namespace, String appId, String flowId, String flowletId, int nInstances) 
+
+	op String stopFlow(String namespace, String appId, String flowId) 
+	
+	op String stopWorker(String namespace, String appId, String workerId) 
+
+	op String stopService(String namespace, String appId, String serviceId) 
+
+	op String truncateDataSet(String namespace, String datasetName) 
+
+	op String deleteDataset(String namespace, String datasetName)
+	
+	op String createStream(String namespace, String newStreamId) 
+
+	op String deleteStream(String namespace, String streamId) 
+
+	op String[] getStreamEvents(String namespace, String streamId, String startTime, String endTime, int limit) 
+
+	op String[] getStreamStats(String namespace, String streamId, String startTime, String endTime, int limit) 
+
+	op String sendEventToStream(String namespace, String streamId, String event) 
+
+	op String trucateStream(String namespace, String streamId) 
+
+	op String setStreamProperties(String namespace, String streamId, String propsFile) 
+	
+	op String restartApp(String namespace, String appId, String progTypes)
+	
+	op String createApp(String namespace, String appId, String artifactName, String artifactVersion, String scope)
+
+    op String createAppWithConfig(String namespace, String appId, String artifactName, String artifactVersion, String scope,
+                        String appConfig)
+	
+    op String setDatasetProperties(String namespace, String datasetName, String datasetProperties)
+
+    op String setStreamTTL(String namespace, String streamName, int ttlSeconds)
+	
+}
+
+class CdapConfiguration extends NamedEntity {
+	String value
+	String source 
+}
+
+class CdapNamespace extends NamedEntity {
+	String description
+	contains unordered CdapKeyPair[] config
+	contains unordered CdapDataset[] datasets
+	contains unordered CdapApplication[] applications
+	refers CdapCluster cluster opposite namespaces
+}
+
+class CdapKeyPair extends NamedEntity {
+	String value
+}
+
+class CdapEntityWithPreferences extends NamedEntity {
+	contains unordered CdapKeyPair[] preferences
+}
+
+class CdapDataset extends NamedEntity {
+	String ^type
+	contains unordered CdapKeyPair[] properties
+	contains CdapDatasetSchema schema
+}
+
+class CdapDatasetSchema extends NamedEntity {
+	String ^type
+	contains CdapDatasetSchemaField[] fields
+}
+
+class CdapDatasetSchemaField extends NamedEntity {
+	String ^type
+}
+
+
+class CdapApplication extends NamedEntity {
+	String ^type
+	String ^id
+	String version
+	String description
+	contains CdapArtifact artifact
+}
+
+class CdapArtifact extends NamedEntity {
+	String version
+	String scope
+}

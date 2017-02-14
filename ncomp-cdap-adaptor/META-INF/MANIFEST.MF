@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ncomp-cdap-adaptor
+Bundle-SymbolicName: ncomp-cdap-adaptor
+Bundle-Version: 0.1.0.qualifier
+Export-Package: org.openecomp.ncomp.cdap.adaptor.tools,
+  org.openecomp.ncomp.servers.cdap
+Require-Bundle: ncomp-core-types,
+ ncomp-sirius-manager-model,
+ ncomp-sirius-manager-server,
+ ncomp-sirius-manager-console,
+ ncomp-sirius-manager-generator,
+ ncomp-cdap-model;bundle-version="0.1.0",
+ ncomp-utils-java;bundle-version="0.1.0"
