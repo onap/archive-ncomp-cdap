@@ -55,6 +55,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapClusterImpl#getBaseUrl <em>Base Url</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapClusterImpl#getPollingFrequency <em>Polling Frequency</em>}</li>
@@ -62,7 +63,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapClusterImpl#getConfigurations <em>Configurations</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapClusterImpl#getNamespaces <em>Namespaces</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */
@@ -303,6 +303,17 @@ public class CdapClusterImpl extends NamedEntityImpl implements CdapCluster {
 	 * @generated
 	 */
 	public String loadArtifact(String namespace, String artifactName, String jarfile, String version) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String loadArtifactWithConfig(String namespace, String artifactName, String jarfile, String version, String config) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -687,6 +698,28 @@ public class CdapClusterImpl extends NamedEntityImpl implements CdapCluster {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String suspendSchedule(String namespace, String appId, String scheduleId) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String resumeSchedule(String namespace, String appId, String scheduleId) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -827,6 +860,7 @@ public class CdapClusterImpl extends NamedEntityImpl implements CdapCluster {
 				case CdapPackage.CDAP_API___DELETE_NAMESPACE__STRING: return CdapPackage.CDAP_CLUSTER___DELETE_NAMESPACE__STRING;
 				case CdapPackage.CDAP_API___DEPLOY_APP__STRING_STRING: return CdapPackage.CDAP_CLUSTER___DEPLOY_APP__STRING_STRING;
 				case CdapPackage.CDAP_API___LOAD_ARTIFACT__STRING_STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___LOAD_ARTIFACT__STRING_STRING_STRING_STRING;
+				case CdapPackage.CDAP_API___LOAD_ARTIFACT_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___LOAD_ARTIFACT_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING;
 				case CdapPackage.CDAP_API___DELETE_ARTIFACT__STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___DELETE_ARTIFACT__STRING_STRING_STRING;
 				case CdapPackage.CDAP_API___START_FLOW__STRING_STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___START_FLOW__STRING_STRING_STRING_STRING;
 				case CdapPackage.CDAP_API___START_WORKER__STRING_STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___START_WORKER__STRING_STRING_STRING_STRING;
@@ -861,6 +895,8 @@ public class CdapClusterImpl extends NamedEntityImpl implements CdapCluster {
 				case CdapPackage.CDAP_API___CREATE_APP_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___CREATE_APP_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING_STRING;
 				case CdapPackage.CDAP_API___SET_DATASET_PROPERTIES__STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___SET_DATASET_PROPERTIES__STRING_STRING_STRING;
 				case CdapPackage.CDAP_API___SET_STREAM_TTL__STRING_STRING_INT: return CdapPackage.CDAP_CLUSTER___SET_STREAM_TTL__STRING_STRING_INT;
+				case CdapPackage.CDAP_API___SUSPEND_SCHEDULE__STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___SUSPEND_SCHEDULE__STRING_STRING_STRING;
+				case CdapPackage.CDAP_API___RESUME_SCHEDULE__STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___RESUME_SCHEDULE__STRING_STRING_STRING;
 				default: return -1;
 			}
 		}
@@ -886,6 +922,8 @@ public class CdapClusterImpl extends NamedEntityImpl implements CdapCluster {
 				return deployApp((String)arguments.get(0), (String)arguments.get(1));
 			case CdapPackage.CDAP_CLUSTER___LOAD_ARTIFACT__STRING_STRING_STRING_STRING:
 				return loadArtifact((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2), (String)arguments.get(3));
+			case CdapPackage.CDAP_CLUSTER___LOAD_ARTIFACT_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING:
+				return loadArtifactWithConfig((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2), (String)arguments.get(3), (String)arguments.get(4));
 			case CdapPackage.CDAP_CLUSTER___DELETE_ARTIFACT__STRING_STRING_STRING:
 				return deleteArtifact((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2));
 			case CdapPackage.CDAP_CLUSTER___START_FLOW__STRING_STRING_STRING_STRING:
@@ -954,6 +992,10 @@ public class CdapClusterImpl extends NamedEntityImpl implements CdapCluster {
 				return setDatasetProperties((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2));
 			case CdapPackage.CDAP_CLUSTER___SET_STREAM_TTL__STRING_STRING_INT:
 				return setStreamTTL((String)arguments.get(0), (String)arguments.get(1), (Integer)arguments.get(2));
+			case CdapPackage.CDAP_CLUSTER___SUSPEND_SCHEDULE__STRING_STRING_STRING:
+				return suspendSchedule((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2));
+			case CdapPackage.CDAP_CLUSTER___RESUME_SCHEDULE__STRING_STRING_STRING:
+				return resumeSchedule((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2));
 		}
 		return super.eInvoke(operationID, arguments);
 	}

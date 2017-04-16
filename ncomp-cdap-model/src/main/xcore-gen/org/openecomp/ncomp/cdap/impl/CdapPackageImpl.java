@@ -326,7 +326,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__DeleteArtifact__String_String_String() {
+	public EOperation getCdapApi__LoadArtifactWithConfig__String_String_String_String_String() {
 		return cdapApiEClass.getEOperations().get(4);
 	}
 
@@ -335,7 +335,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__StartFlow__String_String_String_String() {
+	public EOperation getCdapApi__DeleteArtifact__String_String_String() {
 		return cdapApiEClass.getEOperations().get(5);
 	}
 
@@ -344,7 +344,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__StartWorker__String_String_String_String() {
+	public EOperation getCdapApi__StartFlow__String_String_String_String() {
 		return cdapApiEClass.getEOperations().get(6);
 	}
 
@@ -353,7 +353,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__StartService__String_String_String_String() {
+	public EOperation getCdapApi__StartWorker__String_String_String_String() {
 		return cdapApiEClass.getEOperations().get(7);
 	}
 
@@ -362,7 +362,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__StartApp__String_String() {
+	public EOperation getCdapApi__StartService__String_String_String_String() {
 		return cdapApiEClass.getEOperations().get(8);
 	}
 
@@ -371,7 +371,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__StopApp__String_String() {
+	public EOperation getCdapApi__StartApp__String_String() {
 		return cdapApiEClass.getEOperations().get(9);
 	}
 
@@ -380,7 +380,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__DeleteApp__String_String() {
+	public EOperation getCdapApi__StopApp__String_String() {
 		return cdapApiEClass.getEOperations().get(10);
 	}
 
@@ -389,7 +389,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__LoadPreferencesApp__String_String_String() {
+	public EOperation getCdapApi__DeleteApp__String_String() {
 		return cdapApiEClass.getEOperations().get(11);
 	}
 
@@ -398,7 +398,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__LoadPreferencesFlow__String_String_String_String() {
+	public EOperation getCdapApi__LoadPreferencesApp__String_String_String() {
 		return cdapApiEClass.getEOperations().get(12);
 	}
 
@@ -407,7 +407,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__LoadPreferencesNameSpace__String_String() {
+	public EOperation getCdapApi__LoadPreferencesFlow__String_String_String_String() {
 		return cdapApiEClass.getEOperations().get(13);
 	}
 
@@ -416,7 +416,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__SetPreferencesApp__String_String_String() {
+	public EOperation getCdapApi__LoadPreferencesNameSpace__String_String() {
 		return cdapApiEClass.getEOperations().get(14);
 	}
 
@@ -425,7 +425,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__SetPreferencesFlow__String_String_String_String() {
+	public EOperation getCdapApi__SetPreferencesApp__String_String_String() {
 		return cdapApiEClass.getEOperations().get(15);
 	}
 
@@ -434,7 +434,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__SetPreferencesWorker__String_String_String_String() {
+	public EOperation getCdapApi__SetPreferencesFlow__String_String_String_String() {
 		return cdapApiEClass.getEOperations().get(16);
 	}
 
@@ -443,7 +443,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__SetPreferencesService__String_String_String_String() {
+	public EOperation getCdapApi__SetPreferencesWorker__String_String_String_String() {
 		return cdapApiEClass.getEOperations().get(17);
 	}
 
@@ -452,7 +452,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__SetPreferencesNameSpace__String_String() {
+	public EOperation getCdapApi__SetPreferencesService__String_String_String_String() {
 		return cdapApiEClass.getEOperations().get(18);
 	}
 
@@ -461,7 +461,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__SetFlowRunTimeArgs__String_String_String_String() {
+	public EOperation getCdapApi__SetPreferencesNameSpace__String_String() {
 		return cdapApiEClass.getEOperations().get(19);
 	}
 
@@ -470,7 +470,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__SetFlowletInstances__String_String_String_String_int() {
+	public EOperation getCdapApi__SetFlowRunTimeArgs__String_String_String_String() {
 		return cdapApiEClass.getEOperations().get(20);
 	}
 
@@ -479,7 +479,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__StopFlow__String_String_String() {
+	public EOperation getCdapApi__SetFlowletInstances__String_String_String_String_int() {
 		return cdapApiEClass.getEOperations().get(21);
 	}
 
@@ -488,7 +488,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__StopWorker__String_String_String() {
+	public EOperation getCdapApi__StopFlow__String_String_String() {
 		return cdapApiEClass.getEOperations().get(22);
 	}
 
@@ -497,7 +497,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__StopService__String_String_String() {
+	public EOperation getCdapApi__StopWorker__String_String_String() {
 		return cdapApiEClass.getEOperations().get(23);
 	}
 
@@ -506,7 +506,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__TruncateDataSet__String_String() {
+	public EOperation getCdapApi__StopService__String_String_String() {
 		return cdapApiEClass.getEOperations().get(24);
 	}
 
@@ -515,7 +515,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__DeleteDataset__String_String() {
+	public EOperation getCdapApi__TruncateDataSet__String_String() {
 		return cdapApiEClass.getEOperations().get(25);
 	}
 
@@ -524,7 +524,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__CreateStream__String_String() {
+	public EOperation getCdapApi__DeleteDataset__String_String() {
 		return cdapApiEClass.getEOperations().get(26);
 	}
 
@@ -533,7 +533,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__DeleteStream__String_String() {
+	public EOperation getCdapApi__CreateStream__String_String() {
 		return cdapApiEClass.getEOperations().get(27);
 	}
 
@@ -542,7 +542,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__GetStreamEvents__String_String_String_String_int() {
+	public EOperation getCdapApi__DeleteStream__String_String() {
 		return cdapApiEClass.getEOperations().get(28);
 	}
 
@@ -551,7 +551,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__GetStreamStats__String_String_String_String_int() {
+	public EOperation getCdapApi__GetStreamEvents__String_String_String_String_int() {
 		return cdapApiEClass.getEOperations().get(29);
 	}
 
@@ -560,7 +560,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__SendEventToStream__String_String_String() {
+	public EOperation getCdapApi__GetStreamStats__String_String_String_String_int() {
 		return cdapApiEClass.getEOperations().get(30);
 	}
 
@@ -569,7 +569,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__TrucateStream__String_String() {
+	public EOperation getCdapApi__SendEventToStream__String_String_String() {
 		return cdapApiEClass.getEOperations().get(31);
 	}
 
@@ -578,7 +578,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__SetStreamProperties__String_String_String() {
+	public EOperation getCdapApi__TrucateStream__String_String() {
 		return cdapApiEClass.getEOperations().get(32);
 	}
 
@@ -587,7 +587,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__RestartApp__String_String_String() {
+	public EOperation getCdapApi__SetStreamProperties__String_String_String() {
 		return cdapApiEClass.getEOperations().get(33);
 	}
 
@@ -596,7 +596,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__CreateApp__String_String_String_String_String() {
+	public EOperation getCdapApi__RestartApp__String_String_String() {
 		return cdapApiEClass.getEOperations().get(34);
 	}
 
@@ -605,7 +605,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__CreateAppWithConfig__String_String_String_String_String_String() {
+	public EOperation getCdapApi__CreateApp__String_String_String_String_String() {
 		return cdapApiEClass.getEOperations().get(35);
 	}
 
@@ -614,7 +614,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__SetDatasetProperties__String_String_String() {
+	public EOperation getCdapApi__CreateAppWithConfig__String_String_String_String_String_String() {
 		return cdapApiEClass.getEOperations().get(36);
 	}
 
@@ -623,8 +623,35 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__SetStreamTTL__String_String_int() {
+	public EOperation getCdapApi__SetDatasetProperties__String_String_String() {
 		return cdapApiEClass.getEOperations().get(37);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getCdapApi__SetStreamTTL__String_String_int() {
+		return cdapApiEClass.getEOperations().get(38);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getCdapApi__SuspendSchedule__String_String_String() {
+		return cdapApiEClass.getEOperations().get(39);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getCdapApi__ResumeSchedule__String_String_String() {
+		return cdapApiEClass.getEOperations().get(40);
 	}
 
 	/**
@@ -949,6 +976,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 		createEOperation(cdapApiEClass, CDAP_API___DELETE_NAMESPACE__STRING);
 		createEOperation(cdapApiEClass, CDAP_API___DEPLOY_APP__STRING_STRING);
 		createEOperation(cdapApiEClass, CDAP_API___LOAD_ARTIFACT__STRING_STRING_STRING_STRING);
+		createEOperation(cdapApiEClass, CDAP_API___LOAD_ARTIFACT_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING);
 		createEOperation(cdapApiEClass, CDAP_API___DELETE_ARTIFACT__STRING_STRING_STRING);
 		createEOperation(cdapApiEClass, CDAP_API___START_FLOW__STRING_STRING_STRING_STRING);
 		createEOperation(cdapApiEClass, CDAP_API___START_WORKER__STRING_STRING_STRING_STRING);
@@ -983,6 +1011,8 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 		createEOperation(cdapApiEClass, CDAP_API___CREATE_APP_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING_STRING);
 		createEOperation(cdapApiEClass, CDAP_API___SET_DATASET_PROPERTIES__STRING_STRING_STRING);
 		createEOperation(cdapApiEClass, CDAP_API___SET_STREAM_TTL__STRING_STRING_INT);
+		createEOperation(cdapApiEClass, CDAP_API___SUSPEND_SCHEDULE__STRING_STRING_STRING);
+		createEOperation(cdapApiEClass, CDAP_API___RESUME_SCHEDULE__STRING_STRING_STRING);
 
 		cdapConfigurationEClass = createEClass(CDAP_CONFIGURATION);
 		createEAttribute(cdapConfigurationEClass, CDAP_CONFIGURATION__VALUE);
@@ -1098,6 +1128,13 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 		addEParameter(op, theEcorePackage.getEString(), "artifactName", 0, 1, !IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theEcorePackage.getEString(), "jarfile", 0, 1, !IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theEcorePackage.getEString(), "version", 0, 1, !IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getCdapApi__LoadArtifactWithConfig__String_String_String_String_String(), theEcorePackage.getEString(), "loadArtifactWithConfig", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theEcorePackage.getEString(), "namespace", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theEcorePackage.getEString(), "artifactName", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theEcorePackage.getEString(), "jarfile", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theEcorePackage.getEString(), "version", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theEcorePackage.getEString(), "config", 0, 1, !IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(getCdapApi__DeleteArtifact__String_String_String(), theEcorePackage.getEString(), "deleteArtifact", 0, 1, !IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theEcorePackage.getEString(), "namespace", 0, 1, !IS_UNIQUE, IS_ORDERED);
@@ -1277,6 +1314,16 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 		addEParameter(op, theEcorePackage.getEString(), "namespace", 0, 1, !IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theEcorePackage.getEString(), "streamName", 0, 1, !IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theEcorePackage.getEInt(), "ttlSeconds", 0, 1, !IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getCdapApi__SuspendSchedule__String_String_String(), theEcorePackage.getEString(), "suspendSchedule", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theEcorePackage.getEString(), "namespace", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theEcorePackage.getEString(), "appId", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theEcorePackage.getEString(), "scheduleId", 0, 1, !IS_UNIQUE, IS_ORDERED);
+
+		op = initEOperation(getCdapApi__ResumeSchedule__String_String_String(), theEcorePackage.getEString(), "resumeSchedule", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theEcorePackage.getEString(), "namespace", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theEcorePackage.getEString(), "appId", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theEcorePackage.getEString(), "scheduleId", 0, 1, !IS_UNIQUE, IS_ORDERED);
 
 		initEClass(cdapConfigurationEClass, CdapConfiguration.class, "CdapConfiguration", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCdapConfiguration_Value(), theEcorePackage.getEString(), "value", null, 0, 1, CdapConfiguration.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

@@ -34,6 +34,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapNamespace#getDescription <em>Description</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapNamespace#getConfig <em>Config</em>}</li>
@@ -41,7 +42,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.openecomp.ncomp.cdap.CdapNamespace#getApplications <em>Applications</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapNamespace#getCluster <em>Cluster</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.openecomp.ncomp.cdap.CdapPackage#getCdapNamespace()
  * @model

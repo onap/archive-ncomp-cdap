@@ -32,11 +32,11 @@ import org.openecomp.ncomp.core.NamedEntity;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapArtifact#getVersion <em>Version</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapArtifact#getScope <em>Scope</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.openecomp.ncomp.cdap.CdapPackage#getCdapArtifact()
  * @model

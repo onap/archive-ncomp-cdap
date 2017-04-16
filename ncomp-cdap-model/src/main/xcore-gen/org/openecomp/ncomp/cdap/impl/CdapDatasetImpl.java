@@ -51,12 +51,12 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapDatasetImpl#getType <em>Type</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapDatasetImpl#getProperties <em>Properties</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapDatasetImpl#getSchema <em>Schema</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

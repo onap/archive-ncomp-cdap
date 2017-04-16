@@ -109,6 +109,17 @@ public class CdapCdapClusterConsole extends Console {
 		return res;
 	}
 
+	public java.lang.String loadArtifactWithConfig(String path, java.lang.String namespace, java.lang.String artifactName, java.lang.String jarfile, java.lang.String version, java.lang.String config) {
+		java.lang.String res = null;
+		try {
+			res =  controller.loadArtifactWithConfig(path,namespace,artifactName,jarfile,version,config);
+		}
+		catch (ManagementServerError e) {
+			System.err.println("ERROR: " + e.getJson().toString(2));
+		}
+		return res;
+	}
+
 	public java.lang.String deleteArtifact(String path, java.lang.String namespace, java.lang.String artifactName, java.lang.String artifactVersion) {
 		java.lang.String res = null;
 		try {
@@ -476,6 +487,28 @@ public class CdapCdapClusterConsole extends Console {
 		java.lang.String res = null;
 		try {
 			res =  controller.setStreamTTL(path,namespace,streamName,ttlSeconds);
+		}
+		catch (ManagementServerError e) {
+			System.err.println("ERROR: " + e.getJson().toString(2));
+		}
+		return res;
+	}
+
+	public java.lang.String suspendSchedule(String path, java.lang.String namespace, java.lang.String appId, java.lang.String scheduleId) {
+		java.lang.String res = null;
+		try {
+			res =  controller.suspendSchedule(path,namespace,appId,scheduleId);
+		}
+		catch (ManagementServerError e) {
+			System.err.println("ERROR: " + e.getJson().toString(2));
+		}
+		return res;
+	}
+
+	public java.lang.String resumeSchedule(String path, java.lang.String namespace, java.lang.String appId, java.lang.String scheduleId) {
+		java.lang.String res = null;
+		try {
+			res =  controller.resumeSchedule(path,namespace,appId,scheduleId);
 		}
 		catch (ManagementServerError e) {
 			System.err.println("ERROR: " + e.getJson().toString(2));

@@ -30,6 +30,8 @@ import org.openecomp.ncomp.sirius.manager.GenericHttpClient;
 import org.apache.log4j.Logger;
 
 import org.openecomp.logger.EcompLogger;
+import org.openecomp.logger.StatusCodeEnum;
+import org.openecomp.logger.EcompException;
 
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
@@ -54,17 +56,20 @@ public class CdapCdapAdaptorClient extends CdapAdaptorImpl {
 		CdapCdapAdaptor.ecoreSetup(); 
 		client = new GenericHttpClient(file,name);
 		client.add("/resources", this);
+		client.setVersion("ONAP-R2");
 	}
 
 	public CdapCdapAdaptorClient(String file, String name1, String name2) {
 		HighAvailabilityClient client1 = new HighAvailabilityClient(file,name1,name2);
 		client = client1.all; // requests should be forwarded to all.
 		client.add("/resources", this);
+		client.setVersion("ONAP-R2");
 	}
 	
 	public CdapCdapAdaptorClient(AbstractClient c) {
 		client = c;
 		client.add("/resources", this);
+		client.setVersion("ONAP-R2");
 	}
 
 

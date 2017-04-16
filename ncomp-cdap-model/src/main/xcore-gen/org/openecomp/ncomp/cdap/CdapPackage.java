@@ -43,6 +43,24 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
+ * <!-- begin-model-doc -->
+ * -
+ * ============LICENSE_START==========================================
+ * OPENECOMP - DCAE
+ * ===================================================================
+ * Copyright (c) 2017 AT&T Intellectual Property. All rights reserved.
+ * ===================================================================
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *  *        http://www.apache.org/licenses/LICENSE-2.0
+ *  * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ============LICENSE_END============================================
+ * <!-- end-model-doc -->
  * @see org.openecomp.ncomp.cdap.CdapFactory
  * @model kind="package"
  *        annotation="http://www.eclipse.org/emf/2002/GenModel modelDirectory='/ncomp-cdap-model/src/main/xcore-gen' basePackage='org.openecomp.ncomp'"
@@ -246,13 +264,22 @@ public interface CdapPackage extends EPackage {
 	int CDAP_CLUSTER___LOAD_ARTIFACT__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 3;
 
 	/**
+	 * The operation id for the '<em>Load Artifact With Config</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CDAP_CLUSTER___LOAD_ARTIFACT_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 4;
+
+	/**
 	 * The operation id for the '<em>Delete Artifact</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___DELETE_ARTIFACT__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 4;
+	int CDAP_CLUSTER___DELETE_ARTIFACT__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 5;
 
 	/**
 	 * The operation id for the '<em>Start Flow</em>' operation.
@@ -261,7 +288,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___START_FLOW__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 5;
+	int CDAP_CLUSTER___START_FLOW__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 6;
 
 	/**
 	 * The operation id for the '<em>Start Worker</em>' operation.
@@ -270,7 +297,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___START_WORKER__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 6;
+	int CDAP_CLUSTER___START_WORKER__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 7;
 
 	/**
 	 * The operation id for the '<em>Start Service</em>' operation.
@@ -279,7 +306,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___START_SERVICE__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 7;
+	int CDAP_CLUSTER___START_SERVICE__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 8;
 
 	/**
 	 * The operation id for the '<em>Start App</em>' operation.
@@ -288,7 +315,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___START_APP__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 8;
+	int CDAP_CLUSTER___START_APP__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 9;
 
 	/**
 	 * The operation id for the '<em>Stop App</em>' operation.
@@ -297,7 +324,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___STOP_APP__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 9;
+	int CDAP_CLUSTER___STOP_APP__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 10;
 
 	/**
 	 * The operation id for the '<em>Delete App</em>' operation.
@@ -306,7 +333,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___DELETE_APP__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 10;
+	int CDAP_CLUSTER___DELETE_APP__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 11;
 
 	/**
 	 * The operation id for the '<em>Load Preferences App</em>' operation.
@@ -315,7 +342,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___LOAD_PREFERENCES_APP__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 11;
+	int CDAP_CLUSTER___LOAD_PREFERENCES_APP__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 12;
 
 	/**
 	 * The operation id for the '<em>Load Preferences Flow</em>' operation.
@@ -324,7 +351,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___LOAD_PREFERENCES_FLOW__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 12;
+	int CDAP_CLUSTER___LOAD_PREFERENCES_FLOW__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 13;
 
 	/**
 	 * The operation id for the '<em>Load Preferences Name Space</em>' operation.
@@ -333,7 +360,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___LOAD_PREFERENCES_NAME_SPACE__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 13;
+	int CDAP_CLUSTER___LOAD_PREFERENCES_NAME_SPACE__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 14;
 
 	/**
 	 * The operation id for the '<em>Set Preferences App</em>' operation.
@@ -342,7 +369,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___SET_PREFERENCES_APP__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 14;
+	int CDAP_CLUSTER___SET_PREFERENCES_APP__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 15;
 
 	/**
 	 * The operation id for the '<em>Set Preferences Flow</em>' operation.
@@ -351,7 +378,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___SET_PREFERENCES_FLOW__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 15;
+	int CDAP_CLUSTER___SET_PREFERENCES_FLOW__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 16;
 
 	/**
 	 * The operation id for the '<em>Set Preferences Worker</em>' operation.
@@ -360,7 +387,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___SET_PREFERENCES_WORKER__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 16;
+	int CDAP_CLUSTER___SET_PREFERENCES_WORKER__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 17;
 
 	/**
 	 * The operation id for the '<em>Set Preferences Service</em>' operation.
@@ -369,7 +396,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___SET_PREFERENCES_SERVICE__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 17;
+	int CDAP_CLUSTER___SET_PREFERENCES_SERVICE__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 18;
 
 	/**
 	 * The operation id for the '<em>Set Preferences Name Space</em>' operation.
@@ -378,7 +405,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___SET_PREFERENCES_NAME_SPACE__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 18;
+	int CDAP_CLUSTER___SET_PREFERENCES_NAME_SPACE__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 19;
 
 	/**
 	 * The operation id for the '<em>Set Flow Run Time Args</em>' operation.
@@ -387,7 +414,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___SET_FLOW_RUN_TIME_ARGS__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 19;
+	int CDAP_CLUSTER___SET_FLOW_RUN_TIME_ARGS__STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 20;
 
 	/**
 	 * The operation id for the '<em>Set Flowlet Instances</em>' operation.
@@ -396,7 +423,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___SET_FLOWLET_INSTANCES__STRING_STRING_STRING_STRING_INT = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 20;
+	int CDAP_CLUSTER___SET_FLOWLET_INSTANCES__STRING_STRING_STRING_STRING_INT = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 21;
 
 	/**
 	 * The operation id for the '<em>Stop Flow</em>' operation.
@@ -405,7 +432,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___STOP_FLOW__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 21;
+	int CDAP_CLUSTER___STOP_FLOW__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 22;
 
 	/**
 	 * The operation id for the '<em>Stop Worker</em>' operation.
@@ -414,7 +441,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___STOP_WORKER__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 22;
+	int CDAP_CLUSTER___STOP_WORKER__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 23;
 
 	/**
 	 * The operation id for the '<em>Stop Service</em>' operation.
@@ -423,7 +450,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___STOP_SERVICE__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 23;
+	int CDAP_CLUSTER___STOP_SERVICE__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 24;
 
 	/**
 	 * The operation id for the '<em>Truncate Data Set</em>' operation.
@@ -432,7 +459,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___TRUNCATE_DATA_SET__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 24;
+	int CDAP_CLUSTER___TRUNCATE_DATA_SET__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 25;
 
 	/**
 	 * The operation id for the '<em>Delete Dataset</em>' operation.
@@ -441,7 +468,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___DELETE_DATASET__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 25;
+	int CDAP_CLUSTER___DELETE_DATASET__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 26;
 
 	/**
 	 * The operation id for the '<em>Create Stream</em>' operation.
@@ -450,7 +477,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___CREATE_STREAM__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 26;
+	int CDAP_CLUSTER___CREATE_STREAM__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 27;
 
 	/**
 	 * The operation id for the '<em>Delete Stream</em>' operation.
@@ -459,7 +486,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___DELETE_STREAM__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 27;
+	int CDAP_CLUSTER___DELETE_STREAM__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 28;
 
 	/**
 	 * The operation id for the '<em>Get Stream Events</em>' operation.
@@ -468,7 +495,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___GET_STREAM_EVENTS__STRING_STRING_STRING_STRING_INT = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 28;
+	int CDAP_CLUSTER___GET_STREAM_EVENTS__STRING_STRING_STRING_STRING_INT = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 29;
 
 	/**
 	 * The operation id for the '<em>Get Stream Stats</em>' operation.
@@ -477,7 +504,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___GET_STREAM_STATS__STRING_STRING_STRING_STRING_INT = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 29;
+	int CDAP_CLUSTER___GET_STREAM_STATS__STRING_STRING_STRING_STRING_INT = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 30;
 
 	/**
 	 * The operation id for the '<em>Send Event To Stream</em>' operation.
@@ -486,7 +513,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___SEND_EVENT_TO_STREAM__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 30;
+	int CDAP_CLUSTER___SEND_EVENT_TO_STREAM__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 31;
 
 	/**
 	 * The operation id for the '<em>Trucate Stream</em>' operation.
@@ -495,7 +522,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___TRUCATE_STREAM__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 31;
+	int CDAP_CLUSTER___TRUCATE_STREAM__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 32;
 
 	/**
 	 * The operation id for the '<em>Set Stream Properties</em>' operation.
@@ -504,7 +531,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___SET_STREAM_PROPERTIES__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 32;
+	int CDAP_CLUSTER___SET_STREAM_PROPERTIES__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 33;
 
 	/**
 	 * The operation id for the '<em>Restart App</em>' operation.
@@ -513,7 +540,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___RESTART_APP__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 33;
+	int CDAP_CLUSTER___RESTART_APP__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 34;
 
 	/**
 	 * The operation id for the '<em>Create App</em>' operation.
@@ -522,7 +549,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___CREATE_APP__STRING_STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 34;
+	int CDAP_CLUSTER___CREATE_APP__STRING_STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 35;
 
 	/**
 	 * The operation id for the '<em>Create App With Config</em>' operation.
@@ -531,7 +558,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___CREATE_APP_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 35;
+	int CDAP_CLUSTER___CREATE_APP_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 36;
 
 	/**
 	 * The operation id for the '<em>Set Dataset Properties</em>' operation.
@@ -540,7 +567,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___SET_DATASET_PROPERTIES__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 36;
+	int CDAP_CLUSTER___SET_DATASET_PROPERTIES__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 37;
 
 	/**
 	 * The operation id for the '<em>Set Stream TTL</em>' operation.
@@ -549,7 +576,25 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___SET_STREAM_TTL__STRING_STRING_INT = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 37;
+	int CDAP_CLUSTER___SET_STREAM_TTL__STRING_STRING_INT = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 38;
+
+	/**
+	 * The operation id for the '<em>Suspend Schedule</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CDAP_CLUSTER___SUSPEND_SCHEDULE__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 39;
+
+	/**
+	 * The operation id for the '<em>Resume Schedule</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CDAP_CLUSTER___RESUME_SCHEDULE__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 40;
 
 	/**
 	 * The operation id for the '<em>Poll</em>' operation.
@@ -558,7 +603,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___POLL = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 38;
+	int CDAP_CLUSTER___POLL = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 41;
 
 	/**
 	 * The number of operations of the '<em>Cluster</em>' class.
@@ -567,7 +612,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER_OPERATION_COUNT = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 39;
+	int CDAP_CLUSTER_OPERATION_COUNT = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 42;
 
 	/**
 	 * The meta object id for the '{@link org.openecomp.ncomp.cdap.impl.CdapApiImpl <em>Api</em>}' class.
@@ -625,13 +670,22 @@ public interface CdapPackage extends EPackage {
 	int CDAP_API___LOAD_ARTIFACT__STRING_STRING_STRING_STRING = 3;
 
 	/**
+	 * The operation id for the '<em>Load Artifact With Config</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CDAP_API___LOAD_ARTIFACT_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING = 4;
+
+	/**
 	 * The operation id for the '<em>Delete Artifact</em>' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___DELETE_ARTIFACT__STRING_STRING_STRING = 4;
+	int CDAP_API___DELETE_ARTIFACT__STRING_STRING_STRING = 5;
 
 	/**
 	 * The operation id for the '<em>Start Flow</em>' operation.
@@ -640,7 +694,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___START_FLOW__STRING_STRING_STRING_STRING = 5;
+	int CDAP_API___START_FLOW__STRING_STRING_STRING_STRING = 6;
 
 	/**
 	 * The operation id for the '<em>Start Worker</em>' operation.
@@ -649,7 +703,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___START_WORKER__STRING_STRING_STRING_STRING = 6;
+	int CDAP_API___START_WORKER__STRING_STRING_STRING_STRING = 7;
 
 	/**
 	 * The operation id for the '<em>Start Service</em>' operation.
@@ -658,7 +712,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___START_SERVICE__STRING_STRING_STRING_STRING = 7;
+	int CDAP_API___START_SERVICE__STRING_STRING_STRING_STRING = 8;
 
 	/**
 	 * The operation id for the '<em>Start App</em>' operation.
@@ -667,7 +721,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___START_APP__STRING_STRING = 8;
+	int CDAP_API___START_APP__STRING_STRING = 9;
 
 	/**
 	 * The operation id for the '<em>Stop App</em>' operation.
@@ -676,7 +730,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___STOP_APP__STRING_STRING = 9;
+	int CDAP_API___STOP_APP__STRING_STRING = 10;
 
 	/**
 	 * The operation id for the '<em>Delete App</em>' operation.
@@ -685,7 +739,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___DELETE_APP__STRING_STRING = 10;
+	int CDAP_API___DELETE_APP__STRING_STRING = 11;
 
 	/**
 	 * The operation id for the '<em>Load Preferences App</em>' operation.
@@ -694,7 +748,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___LOAD_PREFERENCES_APP__STRING_STRING_STRING = 11;
+	int CDAP_API___LOAD_PREFERENCES_APP__STRING_STRING_STRING = 12;
 
 	/**
 	 * The operation id for the '<em>Load Preferences Flow</em>' operation.
@@ -703,7 +757,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___LOAD_PREFERENCES_FLOW__STRING_STRING_STRING_STRING = 12;
+	int CDAP_API___LOAD_PREFERENCES_FLOW__STRING_STRING_STRING_STRING = 13;
 
 	/**
 	 * The operation id for the '<em>Load Preferences Name Space</em>' operation.
@@ -712,7 +766,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___LOAD_PREFERENCES_NAME_SPACE__STRING_STRING = 13;
+	int CDAP_API___LOAD_PREFERENCES_NAME_SPACE__STRING_STRING = 14;
 
 	/**
 	 * The operation id for the '<em>Set Preferences App</em>' operation.
@@ -721,7 +775,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___SET_PREFERENCES_APP__STRING_STRING_STRING = 14;
+	int CDAP_API___SET_PREFERENCES_APP__STRING_STRING_STRING = 15;
 
 	/**
 	 * The operation id for the '<em>Set Preferences Flow</em>' operation.
@@ -730,7 +784,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___SET_PREFERENCES_FLOW__STRING_STRING_STRING_STRING = 15;
+	int CDAP_API___SET_PREFERENCES_FLOW__STRING_STRING_STRING_STRING = 16;
 
 	/**
 	 * The operation id for the '<em>Set Preferences Worker</em>' operation.
@@ -739,7 +793,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___SET_PREFERENCES_WORKER__STRING_STRING_STRING_STRING = 16;
+	int CDAP_API___SET_PREFERENCES_WORKER__STRING_STRING_STRING_STRING = 17;
 
 	/**
 	 * The operation id for the '<em>Set Preferences Service</em>' operation.
@@ -748,7 +802,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___SET_PREFERENCES_SERVICE__STRING_STRING_STRING_STRING = 17;
+	int CDAP_API___SET_PREFERENCES_SERVICE__STRING_STRING_STRING_STRING = 18;
 
 	/**
 	 * The operation id for the '<em>Set Preferences Name Space</em>' operation.
@@ -757,7 +811,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___SET_PREFERENCES_NAME_SPACE__STRING_STRING = 18;
+	int CDAP_API___SET_PREFERENCES_NAME_SPACE__STRING_STRING = 19;
 
 	/**
 	 * The operation id for the '<em>Set Flow Run Time Args</em>' operation.
@@ -766,7 +820,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___SET_FLOW_RUN_TIME_ARGS__STRING_STRING_STRING_STRING = 19;
+	int CDAP_API___SET_FLOW_RUN_TIME_ARGS__STRING_STRING_STRING_STRING = 20;
 
 	/**
 	 * The operation id for the '<em>Set Flowlet Instances</em>' operation.
@@ -775,7 +829,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___SET_FLOWLET_INSTANCES__STRING_STRING_STRING_STRING_INT = 20;
+	int CDAP_API___SET_FLOWLET_INSTANCES__STRING_STRING_STRING_STRING_INT = 21;
 
 	/**
 	 * The operation id for the '<em>Stop Flow</em>' operation.
@@ -784,7 +838,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___STOP_FLOW__STRING_STRING_STRING = 21;
+	int CDAP_API___STOP_FLOW__STRING_STRING_STRING = 22;
 
 	/**
 	 * The operation id for the '<em>Stop Worker</em>' operation.
@@ -793,7 +847,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___STOP_WORKER__STRING_STRING_STRING = 22;
+	int CDAP_API___STOP_WORKER__STRING_STRING_STRING = 23;
 
 	/**
 	 * The operation id for the '<em>Stop Service</em>' operation.
@@ -802,7 +856,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___STOP_SERVICE__STRING_STRING_STRING = 23;
+	int CDAP_API___STOP_SERVICE__STRING_STRING_STRING = 24;
 
 	/**
 	 * The operation id for the '<em>Truncate Data Set</em>' operation.
@@ -811,7 +865,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___TRUNCATE_DATA_SET__STRING_STRING = 24;
+	int CDAP_API___TRUNCATE_DATA_SET__STRING_STRING = 25;
 
 	/**
 	 * The operation id for the '<em>Delete Dataset</em>' operation.
@@ -820,7 +874,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___DELETE_DATASET__STRING_STRING = 25;
+	int CDAP_API___DELETE_DATASET__STRING_STRING = 26;
 
 	/**
 	 * The operation id for the '<em>Create Stream</em>' operation.
@@ -829,7 +883,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___CREATE_STREAM__STRING_STRING = 26;
+	int CDAP_API___CREATE_STREAM__STRING_STRING = 27;
 
 	/**
 	 * The operation id for the '<em>Delete Stream</em>' operation.
@@ -838,7 +892,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___DELETE_STREAM__STRING_STRING = 27;
+	int CDAP_API___DELETE_STREAM__STRING_STRING = 28;
 
 	/**
 	 * The operation id for the '<em>Get Stream Events</em>' operation.
@@ -847,7 +901,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___GET_STREAM_EVENTS__STRING_STRING_STRING_STRING_INT = 28;
+	int CDAP_API___GET_STREAM_EVENTS__STRING_STRING_STRING_STRING_INT = 29;
 
 	/**
 	 * The operation id for the '<em>Get Stream Stats</em>' operation.
@@ -856,7 +910,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___GET_STREAM_STATS__STRING_STRING_STRING_STRING_INT = 29;
+	int CDAP_API___GET_STREAM_STATS__STRING_STRING_STRING_STRING_INT = 30;
 
 	/**
 	 * The operation id for the '<em>Send Event To Stream</em>' operation.
@@ -865,7 +919,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___SEND_EVENT_TO_STREAM__STRING_STRING_STRING = 30;
+	int CDAP_API___SEND_EVENT_TO_STREAM__STRING_STRING_STRING = 31;
 
 	/**
 	 * The operation id for the '<em>Trucate Stream</em>' operation.
@@ -874,7 +928,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___TRUCATE_STREAM__STRING_STRING = 31;
+	int CDAP_API___TRUCATE_STREAM__STRING_STRING = 32;
 
 	/**
 	 * The operation id for the '<em>Set Stream Properties</em>' operation.
@@ -883,7 +937,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___SET_STREAM_PROPERTIES__STRING_STRING_STRING = 32;
+	int CDAP_API___SET_STREAM_PROPERTIES__STRING_STRING_STRING = 33;
 
 	/**
 	 * The operation id for the '<em>Restart App</em>' operation.
@@ -892,7 +946,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___RESTART_APP__STRING_STRING_STRING = 33;
+	int CDAP_API___RESTART_APP__STRING_STRING_STRING = 34;
 
 	/**
 	 * The operation id for the '<em>Create App</em>' operation.
@@ -901,7 +955,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___CREATE_APP__STRING_STRING_STRING_STRING_STRING = 34;
+	int CDAP_API___CREATE_APP__STRING_STRING_STRING_STRING_STRING = 35;
 
 	/**
 	 * The operation id for the '<em>Create App With Config</em>' operation.
@@ -910,7 +964,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___CREATE_APP_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING_STRING = 35;
+	int CDAP_API___CREATE_APP_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING_STRING = 36;
 
 	/**
 	 * The operation id for the '<em>Set Dataset Properties</em>' operation.
@@ -919,7 +973,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___SET_DATASET_PROPERTIES__STRING_STRING_STRING = 36;
+	int CDAP_API___SET_DATASET_PROPERTIES__STRING_STRING_STRING = 37;
 
 	/**
 	 * The operation id for the '<em>Set Stream TTL</em>' operation.
@@ -928,7 +982,25 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___SET_STREAM_TTL__STRING_STRING_INT = 37;
+	int CDAP_API___SET_STREAM_TTL__STRING_STRING_INT = 38;
+
+	/**
+	 * The operation id for the '<em>Suspend Schedule</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CDAP_API___SUSPEND_SCHEDULE__STRING_STRING_STRING = 39;
+
+	/**
+	 * The operation id for the '<em>Resume Schedule</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CDAP_API___RESUME_SCHEDULE__STRING_STRING_STRING = 40;
 
 	/**
 	 * The number of operations of the '<em>Api</em>' class.
@@ -937,7 +1009,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API_OPERATION_COUNT = 38;
+	int CDAP_API_OPERATION_COUNT = 41;
 
 	/**
 	 * The meta object id for the '{@link org.openecomp.ncomp.cdap.impl.CdapConfigurationImpl <em>Configuration</em>}' class.
@@ -1850,6 +1922,16 @@ public interface CdapPackage extends EPackage {
 	EOperation getCdapApi__LoadArtifact__String_String_String_String();
 
 	/**
+	 * Returns the meta object for the '{@link org.openecomp.ncomp.cdap.CdapApi#loadArtifactWithConfig(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) <em>Load Artifact With Config</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Load Artifact With Config</em>' operation.
+	 * @see org.openecomp.ncomp.cdap.CdapApi#loadArtifactWithConfig(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
+	 * @generated
+	 */
+	EOperation getCdapApi__LoadArtifactWithConfig__String_String_String_String_String();
+
+	/**
 	 * Returns the meta object for the '{@link org.openecomp.ncomp.cdap.CdapApi#deleteArtifact(java.lang.String, java.lang.String, java.lang.String) <em>Delete Artifact</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2188,6 +2270,26 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 */
 	EOperation getCdapApi__SetStreamTTL__String_String_int();
+
+	/**
+	 * Returns the meta object for the '{@link org.openecomp.ncomp.cdap.CdapApi#suspendSchedule(java.lang.String, java.lang.String, java.lang.String) <em>Suspend Schedule</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Suspend Schedule</em>' operation.
+	 * @see org.openecomp.ncomp.cdap.CdapApi#suspendSchedule(java.lang.String, java.lang.String, java.lang.String)
+	 * @generated
+	 */
+	EOperation getCdapApi__SuspendSchedule__String_String_String();
+
+	/**
+	 * Returns the meta object for the '{@link org.openecomp.ncomp.cdap.CdapApi#resumeSchedule(java.lang.String, java.lang.String, java.lang.String) <em>Resume Schedule</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Resume Schedule</em>' operation.
+	 * @see org.openecomp.ncomp.cdap.CdapApi#resumeSchedule(java.lang.String, java.lang.String, java.lang.String)
+	 * @generated
+	 */
+	EOperation getCdapApi__ResumeSchedule__String_String_String();
 
 	/**
 	 * Returns the meta object for class '{@link org.openecomp.ncomp.cdap.CdapConfiguration <em>Configuration</em>}'.
@@ -2655,6 +2757,14 @@ public interface CdapPackage extends EPackage {
 		EOperation CDAP_API___LOAD_ARTIFACT__STRING_STRING_STRING_STRING = eINSTANCE.getCdapApi__LoadArtifact__String_String_String_String();
 
 		/**
+		 * The meta object literal for the '<em><b>Load Artifact With Config</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CDAP_API___LOAD_ARTIFACT_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING = eINSTANCE.getCdapApi__LoadArtifactWithConfig__String_String_String_String_String();
+
+		/**
 		 * The meta object literal for the '<em><b>Delete Artifact</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2925,6 +3035,22 @@ public interface CdapPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation CDAP_API___SET_STREAM_TTL__STRING_STRING_INT = eINSTANCE.getCdapApi__SetStreamTTL__String_String_int();
+
+		/**
+		 * The meta object literal for the '<em><b>Suspend Schedule</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CDAP_API___SUSPEND_SCHEDULE__STRING_STRING_STRING = eINSTANCE.getCdapApi__SuspendSchedule__String_String_String();
+
+		/**
+		 * The meta object literal for the '<em><b>Resume Schedule</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CDAP_API___RESUME_SCHEDULE__STRING_STRING_STRING = eINSTANCE.getCdapApi__ResumeSchedule__String_String_String();
 
 		/**
 		 * The meta object literal for the '{@link org.openecomp.ncomp.cdap.impl.CdapConfigurationImpl <em>Configuration</em>}' class.

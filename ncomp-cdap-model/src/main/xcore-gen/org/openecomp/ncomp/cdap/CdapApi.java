@@ -73,6 +73,14 @@ public interface CdapApi extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @model unique="false" namespaceUnique="false" artifactNameUnique="false" jarfileUnique="false" versionUnique="false" configUnique="false"
+	 * @generated
+	 */
+	String loadArtifactWithConfig(String namespace, String artifactName, String jarfile, String version, String config);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model unique="false" namespaceUnique="false" artifactNameUnique="false" artifactVersionUnique="false"
 	 * @generated
 	 */
@@ -341,5 +349,21 @@ public interface CdapApi extends EObject {
 	 * @generated
 	 */
 	String setStreamTTL(String namespace, String streamName, int ttlSeconds);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model unique="false" namespaceUnique="false" appIdUnique="false" scheduleIdUnique="false"
+	 * @generated
+	 */
+	String suspendSchedule(String namespace, String appId, String scheduleId);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model unique="false" namespaceUnique="false" appIdUnique="false" scheduleIdUnique="false"
+	 * @generated
+	 */
+	String resumeSchedule(String namespace, String appId, String scheduleId);
 
 } // CdapApi

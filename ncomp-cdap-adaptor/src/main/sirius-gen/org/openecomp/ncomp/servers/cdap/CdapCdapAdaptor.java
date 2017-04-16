@@ -25,24 +25,34 @@ package org.openecomp.ncomp.servers.cdap;
 
 
 
+
+
 import java.io.InputStream;
 
 import org.openecomp.ncomp.sirius.manager.IRequestHandler;
+import org.openecomp.ncomp.sirius.manager.ISwaggerHandler;
 import org.openecomp.ncomp.sirius.manager.ISiriusPlugin;
 import org.openecomp.ncomp.sirius.manager.ISiriusServer;
+import org.openecomp.ncomp.sirius.manager.ISiriusProvider;
+import org.openecomp.ncomp.sirius.manager.ManagementServer;
+import org.openecomp.ncomp.sirius.manager.SwaggerUtils;
 import org.openecomp.ncomp.sirius.function.FunctionUtils;
 import org.openecomp.ncomp.component.ApiRequestStatus;
 
 import org.apache.log4j.Logger;
 
-import org.openecomp.logger.EcompLogger;
+import org.openecomp.ncomp.sirius.manager.logging.NcompLogger;
+import org.openecomp.logger.StatusCodeEnum;
+import org.openecomp.logger.EcompException;
 
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.EObject;
 import org.json.JSONObject;
 
 import java.util.Date;
 
 import org.openecomp.ncomp.servers.cdap.logging.CdapAdaptorOperationEnum;
+import org.openecomp.ncomp.servers.cdap.logging.CdapAdaptorMessageEnum;
 
 
 
@@ -51,9 +61,9 @@ import org.openecomp.ncomp.cdap.impl.CdapAdaptorImpl;
 
 
 
-public class CdapCdapAdaptor extends CdapAdaptorImpl {
+public class CdapCdapAdaptor extends CdapAdaptorImpl implements ISiriusProvider {
 	public static final Logger logger = Logger.getLogger(CdapCdapAdaptor.class);
-	static final EcompLogger ecomplogger = EcompLogger.getEcompLogger();
+	static final NcompLogger ecomplogger = NcompLogger.getNcompLogger();
 	public CdapCdapAdaptorProvider controller;
 	ISiriusServer server;
 
@@ -67,10 +77,12 @@ public class CdapCdapAdaptor extends CdapAdaptorImpl {
 
 
 
+
+
 	public static void ecoreSetup() {
 		CdapCdapAdaptorProvider.ecoreSetup();
 	}
-	public CdapCdapAdaptorProvider getSomfProvider() {
+	public CdapCdapAdaptorProvider getSiriusProvider() {
 		return controller;
 	}
 }
