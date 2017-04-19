@@ -34,6 +34,7 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapCluster#getBaseUrl <em>Base Url</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapCluster#getPollingFrequency <em>Polling Frequency</em>}</li>
@@ -41,7 +42,6 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link org.openecomp.ncomp.cdap.CdapCluster#getConfigurations <em>Configurations</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapCluster#getNamespaces <em>Namespaces</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.openecomp.ncomp.cdap.CdapPackage#getCdapCluster()
  * @model

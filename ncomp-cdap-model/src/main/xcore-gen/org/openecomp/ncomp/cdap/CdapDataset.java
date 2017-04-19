@@ -34,12 +34,12 @@ import org.eclipse.emf.common.util.EList;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapDataset#getType <em>Type</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapDataset#getProperties <em>Properties</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapDataset#getSchema <em>Schema</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.openecomp.ncomp.cdap.CdapPackage#getCdapDataset()
  * @model

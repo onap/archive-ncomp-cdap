@@ -444,4 +444,27 @@ public class CdapCdapClusterProvider extends BasicAdaptorProvider {
 				+ serviceId);
 	}
 
+	public String suspendSchedule(String namespace, String appId, String scheduleId) {
+		return customRunCDAPcliCommand(namespace, "suspend schedule " + appId + "." + scheduleId);
+	}
+
+	public String resumeSchedule(String namespace, String appId, String scheduleId) {
+		return customRunCDAPcliCommand(namespace, "resume schedule " + appId + "." + scheduleId);
+	}
+
+	public String loadArtifactWithConfig(String namespace, String artifactName, String jarfile, String version,
+			String config) {
+    	Date now = new Date();
+		String filename = "/tmp/"+ now.getTime() + ".appConfig";
+        try {
+    		OutputStreamWriter w = FileUtils.filename2writer(filename);
+    		w.append(config);
+    		w.close();
+        } catch (Exception e) {
+            ManagementServerUtils.printStackTrace(e);
+            logger.fatal("configurationChanged" + e);
+        }
+		return customRunCDAPcliCommand(namespace, "load artifact " + jarfile + " config-file " + filename + " name " + artifactName + " version " + version);
+	}
+
 }

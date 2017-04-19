@@ -40,11 +40,11 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapArtifactImpl#getVersion <em>Version</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapArtifactImpl#getScope <em>Scope</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

@@ -32,6 +32,7 @@ import org.openecomp.ncomp.core.NamedEntity;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapApplication#getType <em>Type</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapApplication#getId <em>Id</em>}</li>
@@ -39,7 +40,6 @@ import org.openecomp.ncomp.core.NamedEntity;
  *   <li>{@link org.openecomp.ncomp.cdap.CdapApplication#getDescription <em>Description</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapApplication#getArtifact <em>Artifact</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.openecomp.ncomp.cdap.CdapPackage#getCdapApplication()
  * @model

@@ -54,6 +54,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
+ * </p>
  * <ul>
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapNamespaceImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapNamespaceImpl#getConfig <em>Config</em>}</li>
@@ -61,7 +62,6 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapNamespaceImpl#getApplications <em>Applications</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.impl.CdapNamespaceImpl#getCluster <em>Cluster</em>}</li>
  * </ul>
- * </p>
  *
  * @generated
  */

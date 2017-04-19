@@ -38,8 +38,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Api</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -102,6 +100,17 @@ public class CdapApiImpl extends MinimalEObjectImpl.Container implements CdapApi
 	 * @generated
 	 */
 	public String loadArtifact(String namespace, String artifactName, String jarfile, String version) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String loadArtifactWithConfig(String namespace, String artifactName, String jarfile, String version, String config) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -486,6 +495,28 @@ public class CdapApiImpl extends MinimalEObjectImpl.Container implements CdapApi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String suspendSchedule(String namespace, String appId, String scheduleId) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String resumeSchedule(String namespace, String appId, String scheduleId) {
+		// TODO: implement this method
+		// Ensure that you remove @generated or mark it @generated NOT
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
@@ -497,6 +528,8 @@ public class CdapApiImpl extends MinimalEObjectImpl.Container implements CdapApi
 				return deployApp((String)arguments.get(0), (String)arguments.get(1));
 			case CdapPackage.CDAP_API___LOAD_ARTIFACT__STRING_STRING_STRING_STRING:
 				return loadArtifact((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2), (String)arguments.get(3));
+			case CdapPackage.CDAP_API___LOAD_ARTIFACT_WITH_CONFIG__STRING_STRING_STRING_STRING_STRING:
+				return loadArtifactWithConfig((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2), (String)arguments.get(3), (String)arguments.get(4));
 			case CdapPackage.CDAP_API___DELETE_ARTIFACT__STRING_STRING_STRING:
 				return deleteArtifact((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2));
 			case CdapPackage.CDAP_API___START_FLOW__STRING_STRING_STRING_STRING:
@@ -565,6 +598,10 @@ public class CdapApiImpl extends MinimalEObjectImpl.Container implements CdapApi
 				return setDatasetProperties((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2));
 			case CdapPackage.CDAP_API___SET_STREAM_TTL__STRING_STRING_INT:
 				return setStreamTTL((String)arguments.get(0), (String)arguments.get(1), (Integer)arguments.get(2));
+			case CdapPackage.CDAP_API___SUSPEND_SCHEDULE__STRING_STRING_STRING:
+				return suspendSchedule((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2));
+			case CdapPackage.CDAP_API___RESUME_SCHEDULE__STRING_STRING_STRING:
+				return resumeSchedule((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2));
 		}
 		return super.eInvoke(operationID, arguments);
 	}

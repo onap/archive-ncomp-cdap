@@ -85,6 +85,12 @@ public class CdapCdapClusterProviderTemplate extends BasicAdaptorProvider {
      throw new UnsupportedOperationException();
 	}
 
+	public java.lang.String loadArtifactWithConfig(java.lang.String namespace, java.lang.String artifactName, java.lang.String jarfile, java.lang.String version, java.lang.String config) {
+		java.lang.String res = null;
+     // TODO IMPLEMENT
+     throw new UnsupportedOperationException();
+	}
+
 	public java.lang.String deleteArtifact(java.lang.String namespace, java.lang.String artifactName, java.lang.String artifactVersion) {
 		java.lang.String res = null;
      // TODO IMPLEMENT
@@ -284,6 +290,18 @@ public class CdapCdapClusterProviderTemplate extends BasicAdaptorProvider {
 	}
 
 	public java.lang.String setStreamTTL(java.lang.String namespace, java.lang.String streamName, int ttlSeconds) {
+		java.lang.String res = null;
+     // TODO IMPLEMENT
+     throw new UnsupportedOperationException();
+	}
+
+	public java.lang.String suspendSchedule(java.lang.String namespace, java.lang.String appId, java.lang.String scheduleId) {
+		java.lang.String res = null;
+     // TODO IMPLEMENT
+     throw new UnsupportedOperationException();
+	}
+
+	public java.lang.String resumeSchedule(java.lang.String namespace, java.lang.String appId, java.lang.String scheduleId) {
 		java.lang.String res = null;
      // TODO IMPLEMENT
      throw new UnsupportedOperationException();

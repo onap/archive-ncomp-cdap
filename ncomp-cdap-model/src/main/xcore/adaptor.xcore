@@ -49,6 +49,8 @@ class CdapApi {
 
 	op String loadArtifact(String namespace, String artifactName, String jarfile, String version) 
 
+	op String loadArtifactWithConfig(String namespace, String artifactName, String jarfile, String version, String config) 
+
 	op String deleteArtifact(String namespace, String artifactName, String artifactVersion)
 
 	op String startFlow(String namespace, String appName, String flowId, String extraArgs) 
@@ -117,7 +119,11 @@ class CdapApi {
     op String setDatasetProperties(String namespace, String datasetName, String datasetProperties)
 
     op String setStreamTTL(String namespace, String streamName, int ttlSeconds)
+
+	op String suspendSchedule(String namespace, String appId, String scheduleId)
 	
+	op String resumeSchedule(String namespace, String appId, String scheduleId)
+		
 }
 
 class CdapConfiguration extends NamedEntity {

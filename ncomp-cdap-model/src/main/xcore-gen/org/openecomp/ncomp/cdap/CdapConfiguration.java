@@ -32,11 +32,11 @@ import org.openecomp.ncomp.core.NamedEntity;
  *
  * <p>
  * The following features are supported:
+ * </p>
  * <ul>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapConfiguration#getValue <em>Value</em>}</li>
  *   <li>{@link org.openecomp.ncomp.cdap.CdapConfiguration#getSource <em>Source</em>}</li>
  * </ul>
- * </p>
  *
  * @see org.openecomp.ncomp.cdap.CdapPackage#getCdapConfiguration()
  * @model
