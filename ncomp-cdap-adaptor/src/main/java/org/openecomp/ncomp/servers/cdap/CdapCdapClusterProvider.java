@@ -263,7 +263,7 @@ public class CdapCdapClusterProvider extends BasicAdaptorProvider {
 	}
 
 	public String startApp(String namespace, String appName) {
-		return customRunCDAPcliCommand(namespace, "start app " + appName);
+		return customRunCDAPcliCommand(namespace, "start app " + appName + " programs");
 	}
 
 	public String deleteApp(String namespace, String appName) {
