@@ -380,7 +380,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EOperation getCdapApi__StopApp__String_String() {
+	public EOperation getCdapApi__StopApp__String_String_String() {
 		return cdapApiEClass.getEOperations().get(10);
 	}
 
@@ -982,7 +982,7 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 		createEOperation(cdapApiEClass, CDAP_API___START_WORKER__STRING_STRING_STRING_STRING);
 		createEOperation(cdapApiEClass, CDAP_API___START_SERVICE__STRING_STRING_STRING_STRING);
 		createEOperation(cdapApiEClass, CDAP_API___START_APP__STRING_STRING);
-		createEOperation(cdapApiEClass, CDAP_API___STOP_APP__STRING_STRING);
+		createEOperation(cdapApiEClass, CDAP_API___STOP_APP__STRING_STRING_STRING);
 		createEOperation(cdapApiEClass, CDAP_API___DELETE_APP__STRING_STRING);
 		createEOperation(cdapApiEClass, CDAP_API___LOAD_PREFERENCES_APP__STRING_STRING_STRING);
 		createEOperation(cdapApiEClass, CDAP_API___LOAD_PREFERENCES_FLOW__STRING_STRING_STRING_STRING);
@@ -1163,9 +1163,10 @@ public class CdapPackageImpl extends EPackageImpl implements CdapPackage {
 		addEParameter(op, theEcorePackage.getEString(), "namespace", 0, 1, !IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theEcorePackage.getEString(), "appName", 0, 1, !IS_UNIQUE, IS_ORDERED);
 
-		op = initEOperation(getCdapApi__StopApp__String_String(), theEcorePackage.getEString(), "stopApp", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		op = initEOperation(getCdapApi__StopApp__String_String_String(), theEcorePackage.getEString(), "stopApp", 0, 1, !IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theEcorePackage.getEString(), "namespace", 0, 1, !IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theEcorePackage.getEString(), "appName", 0, 1, !IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, theEcorePackage.getEString(), "programTypes", 0, 1, !IS_UNIQUE, IS_ORDERED);
 
 		op = initEOperation(getCdapApi__DeleteApp__String_String(), theEcorePackage.getEString(), "deleteApp", 0, 1, !IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, theEcorePackage.getEString(), "namespace", 0, 1, !IS_UNIQUE, IS_ORDERED);

@@ -420,8 +420,11 @@ public class CdapCdapClusterProvider extends BasicAdaptorProvider {
 		return customRunCDAPcliCommand(namespace, "set stream ttl " + streamName + " " + ttlSeconds);
 	}
 
-	public String stopApp(String namespace, String appName) {
-		return customRunCDAPcliCommand(namespace, "stop app " + appName + " programs");
+	public String stopApp(String namespace, String appName, String programTypes) {
+		if (programTypes == null)
+			return customRunCDAPcliCommand(namespace, "stop app " + appName + " programs");
+		else
+			return customRunCDAPcliCommand(namespace, "stop app " + appName + " programs " + programTypes);
 	}
 
 	public String startWorker(String namespace, String appName,

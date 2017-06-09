@@ -380,21 +380,21 @@ public class CdapCdapCluster extends CdapClusterImpl implements ISiriusProvider,
 		return res;
 	}
 
-	public java.lang.String stopApp(java.lang.String namespace, java.lang.String appName) {
+	public java.lang.String stopApp(java.lang.String namespace, java.lang.String appName, java.lang.String programTypes) {
 		java.lang.String res = null;
 		long duration_ = 0;
 		if (server != null)
-			server.getServer().recordApi(null, this, "stopApp", ApiRequestStatus.START, duration_,namespace,appName);
+			server.getServer().recordApi(null, this, "stopApp", ApiRequestStatus.START, duration_,namespace,appName,programTypes);
 		Date now_ = new Date();
 		ecomplogger.recordAuditEventStartIfNeeded(CdapClusterOperationEnum.CdapCluster_stopApp,server,this);
 		ecomplogger.recordMetricEventStart(CdapClusterOperationEnum.CdapCluster_stopApp,"self:" + ManagementServer.object2ref(this));
 		try {
-			res =  controller.stopApp(namespace,appName);
+			res =  controller.stopApp(namespace,appName,programTypes);
 		}
 		catch (Exception e) {
 			duration_ = new Date().getTime()-now_.getTime();
 			if (server != null)
-				server.getServer().recordApi(null, this, "stopApp", ApiRequestStatus.ERROR, duration_,namespace,appName);
+				server.getServer().recordApi(null, this, "stopApp", ApiRequestStatus.ERROR, duration_,namespace,appName,programTypes);
 			System.err.println("ERROR: " + e);
 			ecomplogger.warn(CdapClusterMessageEnum.REQUEST_FAILED_stopApp, e.toString());
 			EcompException e1 =  EcompException.create(CdapClusterMessageEnum.REQUEST_FAILED_stopApp,e,e.getMessage());
@@ -404,7 +404,7 @@ public class CdapCdapCluster extends CdapClusterImpl implements ISiriusProvider,
 		ecomplogger.recordMetricEventEnd();
 		duration_ = new Date().getTime()-now_.getTime();
 		if (server != null)
-			server.getServer().recordApi(null, this, "stopApp", ApiRequestStatus.OKAY, duration_,namespace,appName);
+			server.getServer().recordApi(null, this, "stopApp", ApiRequestStatus.OKAY, duration_,namespace,appName,programTypes);
 		return res;
 	}
 

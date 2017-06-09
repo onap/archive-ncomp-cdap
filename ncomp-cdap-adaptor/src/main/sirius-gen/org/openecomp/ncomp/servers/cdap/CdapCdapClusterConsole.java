@@ -175,10 +175,10 @@ public class CdapCdapClusterConsole extends Console {
 		return res;
 	}
 
-	public java.lang.String stopApp(String path, java.lang.String namespace, java.lang.String appName) {
+	public java.lang.String stopApp(String path, java.lang.String namespace, java.lang.String appName, java.lang.String programTypes) {
 		java.lang.String res = null;
 		try {
-			res =  controller.stopApp(path,namespace,appName);
+			res =  controller.stopApp(path,namespace,appName,programTypes);
 		}
 		catch (ManagementServerError e) {
 			System.err.println("ERROR: " + e.getJson().toString(2));

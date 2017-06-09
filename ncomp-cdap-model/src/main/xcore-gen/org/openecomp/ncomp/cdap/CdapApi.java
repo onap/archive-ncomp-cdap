@@ -121,10 +121,10 @@ public interface CdapApi extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @model unique="false" namespaceUnique="false" appNameUnique="false"
+	 * @model unique="false" namespaceUnique="false" appNameUnique="false" programTypesUnique="false"
 	 * @generated
 	 */
-	String stopApp(String namespace, String appName);
+	String stopApp(String namespace, String appName, String programTypes);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -324,7 +324,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_CLUSTER___STOP_APP__STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 10;
+	int CDAP_CLUSTER___STOP_APP__STRING_STRING_STRING = CorePackage.NAMED_ENTITY_OPERATION_COUNT + 10;
 
 	/**
 	 * The operation id for the '<em>Delete App</em>' operation.
@@ -730,7 +730,7 @@ public interface CdapPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CDAP_API___STOP_APP__STRING_STRING = 10;
+	int CDAP_API___STOP_APP__STRING_STRING_STRING = 10;
 
 	/**
 	 * The operation id for the '<em>Delete App</em>' operation.
@@ -1982,14 +1982,14 @@ public interface CdapPackage extends EPackage {
 	EOperation getCdapApi__StartApp__String_String();
 
 	/**
-	 * Returns the meta object for the '{@link org.openecomp.ncomp.cdap.CdapApi#stopApp(java.lang.String, java.lang.String) <em>Stop App</em>}' operation.
+	 * Returns the meta object for the '{@link org.openecomp.ncomp.cdap.CdapApi#stopApp(java.lang.String, java.lang.String, java.lang.String) <em>Stop App</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the '<em>Stop App</em>' operation.
-	 * @see org.openecomp.ncomp.cdap.CdapApi#stopApp(java.lang.String, java.lang.String)
+	 * @see org.openecomp.ncomp.cdap.CdapApi#stopApp(java.lang.String, java.lang.String, java.lang.String)
 	 * @generated
 	 */
-	EOperation getCdapApi__StopApp__String_String();
+	EOperation getCdapApi__StopApp__String_String_String();
 
 	/**
 	 * Returns the meta object for the '{@link org.openecomp.ncomp.cdap.CdapApi#deleteApp(java.lang.String, java.lang.String) <em>Delete App</em>}' operation.
@@ -2810,7 +2810,7 @@ public interface CdapPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EOperation CDAP_API___STOP_APP__STRING_STRING = eINSTANCE.getCdapApi__StopApp__String_String();
+		EOperation CDAP_API___STOP_APP__STRING_STRING_STRING = eINSTANCE.getCdapApi__StopApp__String_String_String();
 
 		/**
 		 * The meta object literal for the '<em><b>Delete App</b></em>' operation.
