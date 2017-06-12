@@ -274,12 +274,12 @@ public class CdapCdapClusterClient extends CdapClusterImpl {
 	}
 
 	
-	public java.lang.String stopApp(String path, java.lang.String namespace, java.lang.String appName) {
+	public java.lang.String stopApp(String path, java.lang.String namespace, java.lang.String appName, java.lang.String programTypes) {
 		EClass c = CdapPackage.eINSTANCE.getCdapCluster(); 
 		ecomplogger.recordMetricEventStart(CdapClusterOperationEnum.CdapCluster_stopApp,client.getRemote());
 		java.lang.String res;
 		try {
-		  res = (java.lang.String) client.operationPath(path, c, "stopApp", null, namespace,appName);
+		  res = (java.lang.String) client.operationPath(path, c, "stopApp", null, namespace,appName,programTypes);
 		}
 		catch (Exception e) {
 			ecomplogger.warn(CdapClusterMessageEnum.REMOTE_CALL_FAILED_stopApp, e.toString());

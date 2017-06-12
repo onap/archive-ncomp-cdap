@@ -379,7 +379,7 @@ public class CdapClusterImpl extends NamedEntityImpl implements CdapCluster {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String stopApp(String namespace, String appName) {
+	public String stopApp(String namespace, String appName, String programTypes) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -866,7 +866,7 @@ public class CdapClusterImpl extends NamedEntityImpl implements CdapCluster {
 				case CdapPackage.CDAP_API___START_WORKER__STRING_STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___START_WORKER__STRING_STRING_STRING_STRING;
 				case CdapPackage.CDAP_API___START_SERVICE__STRING_STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___START_SERVICE__STRING_STRING_STRING_STRING;
 				case CdapPackage.CDAP_API___START_APP__STRING_STRING: return CdapPackage.CDAP_CLUSTER___START_APP__STRING_STRING;
-				case CdapPackage.CDAP_API___STOP_APP__STRING_STRING: return CdapPackage.CDAP_CLUSTER___STOP_APP__STRING_STRING;
+				case CdapPackage.CDAP_API___STOP_APP__STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___STOP_APP__STRING_STRING_STRING;
 				case CdapPackage.CDAP_API___DELETE_APP__STRING_STRING: return CdapPackage.CDAP_CLUSTER___DELETE_APP__STRING_STRING;
 				case CdapPackage.CDAP_API___LOAD_PREFERENCES_APP__STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___LOAD_PREFERENCES_APP__STRING_STRING_STRING;
 				case CdapPackage.CDAP_API___LOAD_PREFERENCES_FLOW__STRING_STRING_STRING_STRING: return CdapPackage.CDAP_CLUSTER___LOAD_PREFERENCES_FLOW__STRING_STRING_STRING_STRING;
@@ -934,8 +934,8 @@ public class CdapClusterImpl extends NamedEntityImpl implements CdapCluster {
 				return startService((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2), (String)arguments.get(3));
 			case CdapPackage.CDAP_CLUSTER___START_APP__STRING_STRING:
 				return startApp((String)arguments.get(0), (String)arguments.get(1));
-			case CdapPackage.CDAP_CLUSTER___STOP_APP__STRING_STRING:
-				return stopApp((String)arguments.get(0), (String)arguments.get(1));
+			case CdapPackage.CDAP_CLUSTER___STOP_APP__STRING_STRING_STRING:
+				return stopApp((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2));
 			case CdapPackage.CDAP_CLUSTER___DELETE_APP__STRING_STRING:
 				return deleteApp((String)arguments.get(0), (String)arguments.get(1));
 			case CdapPackage.CDAP_CLUSTER___LOAD_PREFERENCES_APP__STRING_STRING_STRING:

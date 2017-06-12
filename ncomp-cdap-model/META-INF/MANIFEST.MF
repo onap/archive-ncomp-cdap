@@ -13,6 +13,5 @@ Export-Package: org.openecomp.ncomp.cdap,
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.xtext.xbase.lib,
- org.eclipse.emf.ecore.xcore.lib,
- ncomp-core-model;visibility:=reexport
+ org.eclipse.emf.ecore.xcore.lib
 Bundle-ActivationPolicy: lazy

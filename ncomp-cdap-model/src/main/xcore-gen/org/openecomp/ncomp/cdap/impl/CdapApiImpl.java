@@ -176,7 +176,7 @@ public class CdapApiImpl extends MinimalEObjectImpl.Container implements CdapApi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String stopApp(String namespace, String appName) {
+	public String stopApp(String namespace, String appName, String programTypes) {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
 		throw new UnsupportedOperationException();
@@ -540,8 +540,8 @@ public class CdapApiImpl extends MinimalEObjectImpl.Container implements CdapApi
 				return startService((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2), (String)arguments.get(3));
 			case CdapPackage.CDAP_API___START_APP__STRING_STRING:
 				return startApp((String)arguments.get(0), (String)arguments.get(1));
-			case CdapPackage.CDAP_API___STOP_APP__STRING_STRING:
-				return stopApp((String)arguments.get(0), (String)arguments.get(1));
+			case CdapPackage.CDAP_API___STOP_APP__STRING_STRING_STRING:
+				return stopApp((String)arguments.get(0), (String)arguments.get(1), (String)arguments.get(2));
 			case CdapPackage.CDAP_API___DELETE_APP__STRING_STRING:
 				return deleteApp((String)arguments.get(0), (String)arguments.get(1));
 			case CdapPackage.CDAP_API___LOAD_PREFERENCES_APP__STRING_STRING_STRING:

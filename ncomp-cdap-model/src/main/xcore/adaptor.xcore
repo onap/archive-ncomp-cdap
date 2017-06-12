@@ -61,7 +61,7 @@ class CdapApi {
 
 	op String startApp(String namespace, String appName) 
 	
-	op String stopApp(String namespace, String appName) 
+	op String stopApp(String namespace, String appName, String programTypes) 
 
 	op String deleteApp(String namespace, String appName) 
 
